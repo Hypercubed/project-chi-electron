@@ -1,0 +1,46 @@
+{
+  "name": "chiasm-layout",
+  "version": "0.3.0",
+  "description": "Nested box layout for Chiasm components.",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "browserify -g browserify-shim -o chiasm-layout.js -s ChiasmLayout index.js",
+    "test": "mocha",
+    "prepublish": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chiasm-project/chiasm-layout.git"
+  },
+  "keywords": [
+    "DOM",
+    "layout",
+    "box",
+    "dashboard"
+  ],
+  "author": "Curran Kelleher",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chiasm-project/chiasm-layout/issues"
+  },
+  "homepage": "https://github.com/chiasm-project/chiasm-layout",
+  "devDependencies": {
+    "browserify": "^11.2.0",
+    "browserify-shim": "^3.8.10",
+    "chai": "^3.3.0",
+    "chiasm": "^0.2.2",
+    "jsdom": "3.1.2",
+    "mocha": "^2.3.3"
+  },
+  "dependencies": {
+    "chiasm-component": "^0.2.2",
+    "d3": "^3.5.6",
+    "lodash": "^3.10.1",
+    "model-js": "^0.2.4"
+  },
+  "browserify-shim": {
+    "lodash": "global:_",
+    "chiasm-component": "global:ChiasmComponent",
+    "model-js": "global:Model"
+  }
+}

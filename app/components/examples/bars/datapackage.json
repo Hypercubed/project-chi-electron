@@ -1,0 +1,21 @@
+{
+	"name": "Bars",
+	"title": "d3 reusable chart as CommonJS module",
+	"description": "An example using a CommonJS module that exports a d3 reusable chart as [described by M. Bostock](http://bost.ocks.org/mike/chart/)",
+	"resources": [
+		{
+			"url": "https://cdn.rawgit.com/curran/data/gh-pages/d3Examples/letterFrequency/letterFrequency.tsv",
+			"schema": "letterFrequency"
+		}
+	],
+  "schemas": {
+    "letterFrequency":  {
+      "fields": [
+        { "name": "letter", "type": "string", "constraints": { "required": true } },
+        { "name": "frequency", "type": "number", "constraints": { "required": true } }
+      ]
+    }
+  },
+	"image": "thumbnail.png",
+	"readme": "README.md"
+}

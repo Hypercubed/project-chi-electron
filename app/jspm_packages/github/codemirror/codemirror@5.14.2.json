@@ -1,0 +1,4 @@
+{
+  "main": "lib/codemirror.js",
+  "format": "global"
+}

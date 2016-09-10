@@ -1,0 +1,7 @@
+
+<div datapackage-edit="$ctrl.editorOptions"></div>
+
+<marked src="$ctrl.dataPackage.readme"></marked>
+<div id="charts" class="container">
+	<bar-chart class="col-xs-12" ng-attr-bar-data="{{$ctrl.dataPackage.resources[0].data}}"></bar-chart>
+</div>
