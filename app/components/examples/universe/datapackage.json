@@ -4,7 +4,7 @@
 	"description": "An example using a [crossfilter/universe](https://github.com/crossfilter/universe).  Data Source: [ASA Data Expo](http://stat-computing.org/dataexpo/2009/) dataset",
 	"resources": [
 		{
-			"path": "https://cdn.rawgit.com/curran/data/gh-pages/vegaExamples/flights-20k.json",
+			"path": "https://cdn.jsdelivr.net/gh/curran/data@gh-pages/vegaExamples/flights-20k.json",
 			"schema": {
 				"fields": [
 					{ "name": "date", "type": "date", "format": "any", "constraints": { "required": true } },
